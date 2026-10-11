@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Donasi Cahaya Dakwah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/dc-lite.js"></script>
+</head>
+<body>
+<template id="x-dc">
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#10231F;background:#F6F7F4}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.88}
+button{font-family:inherit;cursor:pointer}
+button:hover{opacity:.9}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #D9A441;outline-offset:2px}
+@media (max-width:640px){
+.hd{padding:10px 16px !important;gap:8px !important}
+.nv{order:3;width:100%;flex-wrap:nowrap !important;overflow-x:auto;gap:4px !important}
+.nv a{padding:10px 14px !important;white-space:nowrap}
+.hd-cta{padding:10px 18px !important}
+.h1{font-size:34px !important;line-height:1.12 !important}
+.don{padding:40px 20px 64px !important;gap:40px !important}
+.card{padding:24px !important}
+}
+</style>
+</helmet>
+<div style="min-height:100%;background:#F6F7F4">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="scene-masjid" viewBox="0 0 400 220"><rect width="400" height="220" fill="#0A3A33"/>
+<mask id="mk-scene"><rect x="300" y="10" width="60" height="60" fill="#fff"/><circle cx="340" cy="34" r="16" fill="#000"/></mask><circle cx="330" cy="40" r="19" fill="#D9A441" mask="url(#mk-scene)"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(60 40)" fill="#fff" fill-opacity=".8"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(150 24)" fill="#fff" fill-opacity=".8"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(250 52)" fill="#fff" fill-opacity=".8"/>
+<g fill="#052622"><path d="M87 94L96 62L105 94Z"/><rect x="90" y="94" width="12" height="14"/><rect x="85" y="108" width="22" height="5"/><rect x="88" y="113" width="16" height="107"/>
+<path d="M295 94L304 62L313 94Z"/><rect x="298" y="94" width="12" height="14"/><rect x="293" y="108" width="22" height="5"/><rect x="296" y="113" width="16" height="107"/>
+<rect x="118" y="150" width="164" height="70"/><path d="M150 150C150 95 187 85 200 65C213 85 250 95 250 150Z"/>
+<path d="M118 150C118 126 132 122 140 112C148 122 162 126 162 150Z"/><path d="M238 150C238 126 252 122 260 112C268 122 282 126 282 150Z"/><path d="M200 65V54" stroke="#052622" stroke-width="2.5"/></g>
+<circle cx="200" cy="50" r="4" fill="#D9A441"/><circle cx="96" cy="58" r="3" fill="#D9A441"/><circle cx="304" cy="58" r="3" fill="#D9A441"/>
+<g fill="#D9A441" fill-opacity=".92"><path d="M186 220V188a14 14 0 0 1 28 0V220Z"/><path d="M128 190V176a6 6 0 0 1 12 0V190Z"/><path d="M152 190V176a6 6 0 0 1 12 0V190Z"/><path d="M236 190V176a6 6 0 0 1 12 0V190Z"/><path d="M260 190V176a6 6 0 0 1 12 0V190Z"/></g>
+<rect y="212" width="400" height="8" fill="#031A17"/></symbol>
+</defs></svg>
+
+<header style="background:#fff;border-bottom:1px solid #D8E1DD">
+<div class="hd" style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="index.html" style="display:flex;align-items:center;gap:12px">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E4F45"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2" transform="rotate(45 20 20)"/></svg>
+<span style="font-weight:800;font-size:19px;letter-spacing:-.01em">Cahaya Dakwah</span>
+</a>
+<nav class="nv" aria-label="Navigasi utama" style="display:flex;flex-wrap:wrap;gap:6px">
+<a href="index.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Beranda</a>
+<a href="kajian.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Kajian</a>
+<a href="artikel.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Artikel</a>
+<a href="donasi.html" style="padding:12px 18px;border-radius:999px;font-weight:700;font-size:15px;background:#E4EFEA;color:#0E4F45">Donasi</a>
+</nav>
+<a class="hd-cta" href="donasi.html" style="padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;background:#0E4F45;color:#fff">Berdonasi</a>
+</div>
+</header>
+
+<main class="don" style="max-width:1200px;margin:0 auto;padding:72px 24px 96px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+
+<div style="flex:1 1 380px;min-width:0">
+<p style="margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:.12em;color:#0E4F45">BERDONASI</p>
+<h1 class="h1" style="margin:0 0 20px;font-size:48px;line-height:1.1;letter-spacing:-.02em;font-weight:800">Bantu dakwah digital tetap hadir untuk semua</h1>
+<p style="margin:0 0 40px;max-width:520px;font-size:18px;line-height:1.65;color:#3D524C">Setiap kajian dan artikel di sini bisa diakses tanpa biaya. Donasimu menjaga agar semuanya tetap terbuka bagi siapa pun.</p>
+<div style="display:flex;flex-direction:column;gap:24px;max-width:520px">
+<div style="display:flex;gap:18px;align-items:flex-start">
+<div style="flex:none;width:44px;height:44px;border-radius:14px;background:#0E4F45;color:{{accent}};display:flex;align-items:center;justify-content:center;font-weight:800">1</div>
+<div><h2 style="margin:0 0 6px;font-size:19px;font-weight:800">Produksi konten kajian</h2><p style="margin:0;line-height:1.6;color:#4B5F59">Perekaman, penyuntingan, dan penyusunan ringkasan kajian.</p></div>
+</div>
+<div style="display:flex;gap:18px;align-items:flex-start">
+<div style="flex:none;width:44px;height:44px;border-radius:14px;background:#0E4F45;color:{{accent}};display:flex;align-items:center;justify-content:center;font-weight:800">2</div>
+<div><h2 style="margin:0 0 6px;font-size:19px;font-weight:800">Pemeliharaan platform</h2><p style="margin:0;line-height:1.6;color:#4B5F59">Server, aplikasi, dan keamanan agar situs tetap cepat dan nyaman dipakai.</p></div>
+</div>
+<div style="display:flex;gap:18px;align-items:flex-start">
+<div style="flex:none;width:44px;height:44px;border-radius:14px;background:#0E4F45;color:{{accent}};display:flex;align-items:center;justify-content:center;font-weight:800">3</div>
+<div><h2 style="margin:0 0 6px;font-size:19px;font-weight:800">Program belajar gratis</h2><p style="margin:0;line-height:1.6;color:#4B5F59">Kelas dasar untuk pemula yang ingin belajar dari nol.</p></div>
+</div>
+</div>
+<p style="margin:32px 0 0;max-width:520px;font-size:14px;color:#4B5F59">Rincian penggunaan dana di atas adalah contoh. Ganti dengan program yang sebenarnya.</p>
+<div style="position:relative;overflow:hidden;margin-top:36px;max-width:520px;aspect-ratio:400/220;border-radius:24px;background:#0A3A33"><svg aria-hidden="true" viewBox="0 0 400 220" preserveAspectRatio="xMidYMax slice" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#scene-masjid" width="400" height="220"/></svg></div>
+</div>
+
+<div class="card" style="flex:1 1 440px;min-width:0;max-width:560px;background:#fff;border:1px solid #D8E1DD;border-radius:28px;padding:36px;box-shadow:0 20px 40px rgba(16,35,31,.08)">
+
+<sc-if value="{{showForm}}" hint-placeholder-val="{{true}}">
+<h2 style="margin:0 0 24px;font-size:24px;font-weight:800">Pilih donasimu</h2>
+
+<div role="group" aria-label="Frekuensi donasi" style="display:flex;gap:6px;padding:6px;border-radius:16px;background:#E4EFEA;margin-bottom:24px">
+<sc-for list="{{freqs}}" as="f" hint-placeholder-count="2">
+<button aria-pressed="{{f.on}}" onClick="{{f.pick}}" style="{{f.style}}">{{f.label}}</button>
+</sc-for>
+</div>
+
+<p style="margin:0 0 12px;font-size:15px;font-weight:700">Nominal</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+<sc-for list="{{amounts}}" as="a" hint-placeholder-count="5">
+<button aria-pressed="{{a.on}}" onClick="{{a.pick}}" style="{{a.style}}">{{a.label}}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{isCustom}}" hint-placeholder-val="{{false}}">
+<div style="margin-bottom:16px">
+<label for="nominal" style="display:block;margin-bottom:8px;font-size:15px;font-weight:700">Nominal lain (Rp)</label>
+<input id="nominal" type="text" inputmode="numeric" placeholder="Contoh: 75000" value="{{custom}}" onChange="{{onCustom}}" style="box-sizing:border-box;width:100%;height:52px;padding:0 16px;border-radius:14px;border:1.5px solid #B7C8C1;background:#fff;font-family:inherit;font-size:16px;color:#10231F">
+</div>
+</sc-if>
+
+<div style="margin:8px 0 20px">
+<label for="nama" style="display:block;margin-bottom:8px;font-size:15px;font-weight:700">Nama (opsional)</label>
+<input id="nama" type="text" placeholder="Namamu" value="{{name}}" onChange="{{onName}}" style="box-sizing:border-box;width:100%;height:52px;padding:0 16px;border-radius:14px;border:1.5px solid #B7C8C1;background:#fff;font-family:inherit;font-size:16px;color:#10231F">
+<label style="display:flex;align-items:center;gap:12px;min-height:44px;margin-top:6px;font-size:15px;color:#2B3F39;cursor:pointer">
+<input type="checkbox" checked="{{hide}}" onChange="{{toggleHide}}" style="width:22px;height:22px;accent-color:#0E4F45">
+Tampilkan sebagai Hamba Allah
+</label>
+</div>
+
+<p style="margin:0 0 12px;font-size:15px;font-weight:700">Metode pembayaran</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px">
+<sc-for list="{{methods}}" as="m" hint-placeholder-count="3">
+<button aria-pressed="{{m.on}}" onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
+</sc-for>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;padding:18px 20px;border-radius:16px;background:#F6F7F4;margin-bottom:12px">
+<span style="font-size:15px;color:#4B5F59">Total donasi</span>
+<span style="font-size:26px;font-weight:800;color:#0E4F45">{{totalLabel}}</span>
+</div>
+<p aria-live="polite" style="margin:0 0 16px;min-height:22px;font-size:14px;color:#B42318;font-weight:600">{{hint}}</p>
+<button onClick="{{submit}}" style="width:100%;min-height:56px;border-radius:14px;border:none;background:#0E4F45;color:#fff;font-size:17px;font-weight:800">Lanjutkan donasi</button>
+<p style="margin:14px 0 0;text-align:center;font-size:13px;color:#4B5F59">Prototipe desain: tidak ada pembayaran yang diproses.</p>
+</sc-if>
+
+<sc-if value="{{showDone}}" hint-placeholder-val="{{false}}">
+<div style="text-align:center;padding:16px 0">
+<div style="width:72px;height:72px;margin:0 auto 20px;border-radius:999px;background:#E4EFEA;display:flex;align-items:center;justify-content:center">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0E4F45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+</div>
+<h2 style="margin:0 0 10px;font-size:28px;font-weight:800">Jazakumullah khairan</h2>
+<p style="margin:0 0 6px;font-size:17px;line-height:1.6;color:#2B3F39">Terima kasih, {{displayName}}.</p>
+<p style="margin:0 0 28px;font-size:15px;line-height:1.6;color:#4B5F59">{{recap}}</p>
+<button onClick="{{reset}}" style="min-height:52px;padding:0 28px;border-radius:14px;border:1.5px solid #0E4F45;background:#fff;color:#0E4F45;font-size:16px;font-weight:800">Kembali</button>
+<p style="margin:16px 0 0;font-size:13px;color:#4B5F59">Prototipe desain: tidak ada pembayaran yang diproses.</p>
+</div>
+</sc-if>
+
+</div>
+</main>
+
+<footer style="position:relative;background:#0A3A33;color:#CFE3DC">
+<svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="xMidYMax slice" style="position:absolute;left:0;top:-59px;width:100%;height:60px"><g fill="#0A3A33"><rect x="0" y="54" width="1440" height="6"/>
+<rect x="140" y="40" width="80" height="20"/><path d="M164 40C164 28 174 26 180 16C186 26 196 28 196 40Z"/><path d="M135 22L140 6L145 22Z"/><rect x="136" y="22" width="8" height="38"/><path d="M215 22L220 6L225 22Z"/><rect x="216" y="22" width="8" height="38"/>
+<rect x="640" y="36" width="160" height="24"/><path d="M690 36C690 22 706 18 720 4C734 18 750 22 750 36Z"/><path d="M634 18L640 0L646 18Z"/><rect x="636" y="18" width="8" height="42"/><path d="M794 18L800 0L806 18Z"/><rect x="796" y="18" width="8" height="42"/>
+<rect x="1220" y="40" width="80" height="20"/><path d="M1244 40C1244 28 1254 26 1260 16C1266 26 1276 28 1276 40Z"/><path d="M1215 22L1220 6L1225 22Z"/><rect x="1216" y="22" width="8" height="38"/><path d="M1295 22L1300 6L1305 22Z"/><rect x="1296" y="22" width="8" height="38"/>
+<rect x="380" y="48" width="80" height="12"/><path d="M408 48C408 40 414 38 420 30C426 38 432 40 432 48Z"/><rect x="980" y="48" width="80" height="12"/><path d="M1008 48C1008 40 1014 38 1020 30C1026 38 1032 40 1032 48Z"/></g></svg>
+<div style="max-width:1200px;margin:0 auto;padding:56px 24px 28px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+<div style="flex:1 1 280px;max-width:360px">
+<p style="margin:0 0 12px;font-weight:800;font-size:20px;color:#fff">Cahaya Dakwah</p>
+<p style="margin:0;line-height:1.65;font-size:15px">Menyampaikan kebaikan dengan cara yang ramah, jelas, dan mudah dijangkau.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:56px">
+<nav aria-label="Jelajahi" style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Jelajahi</p>
+<a href="kajian.html" style="padding:6px 0">Kajian</a>
+<a href="artikel.html" style="padding:6px 0">Artikel</a>
+<a href="donasi.html" style="padding:6px 0">Donasi</a>
+</nav>
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Hubungi kami</p>
+<p style="margin:0;padding:6px 0">[Email kontak]</p>
+<p style="margin:0;padding:6px 0">[Nomor WhatsApp]</p>
+</div>
+</div>
+</div>
+<div style="max-width:1200px;margin:0 auto;padding:20px 24px 32px;border-top:1px solid #1F5A50;font-size:14px">© 2026 Cahaya Dakwah. Seluruh hak cipta dilindungi.</div>
+</footer>
+
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D9A441","options":["#D9A441","#E8B84F","#C98A2B"]},"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const freq = s.freq ?? 'sekali';
+    const amt = s.amt ?? 50000;
+    const custom = s.custom ?? '';
+    const method = s.method ?? 'qris';
+    const name = s.name ?? '';
+    const hide = s.hide ?? false;
+    const done = s.done ?? false;
+    const hint = s.hint ?? '';
+
+    const rp = (n) => 'Rp' + n.toLocaleString('id-ID');
+    const isCustom = amt === 'lain';
+    const customValue = parseInt(custom.replace(/\D/g, ''), 10) || 0;
+    const total = isCustom ? customValue : amt;
+    const freqText = freq === 'bulanan' ? ' / bulan' : '';
+
+    const segBase = 'flex:1;min-height:48px;border-radius:12px;border:none;font-size:15px;font-weight:700;';
+    const freqs = [['sekali', 'Sekali saja'], ['bulanan', 'Setiap bulan']].map(([id, label]) => ({
+      label,
+      on: id === freq,
+      pick: () => this.setState({ freq: id }),
+      style: id === freq
+        ? segBase + 'background:#0E4F45;color:#fff'
+        : segBase + 'background:transparent;color:#0E4F45'
+    }));
+
+    const chip = 'min-height:48px;padding:0 20px;border-radius:12px;font-size:15px;font-weight:700;';
+    const chipOn = 'background:#E4EFEA;color:#0E4F45;border:2px solid #0E4F45';
+    const chipOff = 'background:#fff;color:#10231F;border:1.5px solid #C5D2CC';
+    const amounts = [25000, 50000, 100000, 250000, 'lain'].map((v) => ({
+      label: v === 'lain' ? 'Lainnya' : rp(v),
+      on: v === amt,
+      pick: () => this.setState({ amt: v, hint: '' }),
+      style: chip + (v === amt ? chipOn : chipOff)
+    }));
+
+    const METHODS = [['transfer', 'Transfer bank'], ['qris', 'QRIS'], ['dompet', 'Dompet digital']];
+    const methods = METHODS.map(([id, label]) => ({
+      label,
+      on: id === method,
+      pick: () => this.setState({ method: id }),
+      style: chip + (id === method ? chipOn : chipOff)
+    }));
+    const methodLabel = METHODS.find((m) => m[0] === method)[1];
+    const displayName = hide || name.trim() === '' ? 'Hamba Allah' : name.trim();
+
+    return {
+      accent: this.props.accent ?? '#D9A441',
+      showForm: !done,
+      showDone: done,
+      freqs,
+      amounts,
+      isCustom,
+      custom,
+      onCustom: (e) => this.setState({ custom: e.target.value, hint: '' }),
+      name,
+      onName: (e) => this.setState({ name: e.target.value }),
+      hide,
+      toggleHide: () => this.setState({ hide: !hide }),
+      methods,
+      totalLabel: rp(total) + freqText,
+      hint,
+      submit: () => {
+        if (total < 10000) {
+          this.setState({ hint: 'Donasi minimal Rp10.000.' });
+        } else {
+          this.setState({ done: true, hint: '' });
+        }
+      },
+      displayName,
+      recap: rp(total) + freqText + ' lewat ' + methodLabel + '.',
+      reset: () => this.setState({ done: false, amt: 50000, custom: '', name: '', hide: false, freq: 'sekali', method: 'qris', hint: '' })
+    };
+  }
+}
+</script>
+</body>
+</html>

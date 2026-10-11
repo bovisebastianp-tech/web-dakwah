@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Putar Kajian Cahaya Dakwah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/dc-lite.js"></script>
+</head>
+<body>
+<template id="x-dc">
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#10231F;background:#F6F7F4}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.88}
+button{font-family:inherit;cursor:pointer}
+button:hover{opacity:.9}
+textarea{font-family:inherit}
+a:focus-visible,button:focus-visible,textarea:focus-visible{outline:3px solid #D9A441;outline-offset:2px}
+@media (max-width:640px){
+.hd{padding:10px 16px !important;gap:8px !important}
+.nv{order:3;width:100%;flex-wrap:nowrap !important;overflow-x:auto;gap:4px !important}
+.nv a{padding:10px 14px !important;white-space:nowrap}
+.hd-cta{padding:10px 18px !important}
+.h1{font-size:28px !important;line-height:1.15 !important}
+}
+</style>
+</helmet>
+<div style="min-height:100%;background:#F6F7F4">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<g id="star8" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"><rect x="105" y="30" width="90" height="90"/><rect x="105" y="30" width="90" height="90" transform="rotate(45 150 75)"/></g>
+<symbol id="g-akidah" viewBox="0 0 300 150"><use href="#star8"/><mask id="mk-ak"><rect width="300" height="150" fill="#fff"/><circle cx="164" cy="66" r="25" fill="#000"/></mask><circle cx="146" cy="75" r="34" fill="#fff" mask="url(#mk-ak)"/><path d="M0 -8L2 -2L8 0L2 2L0 8L-2 2L-8 0L-2 -2Z" transform="translate(178 62) scale(1.3)" fill="#D9A441"/></symbol>
+<symbol id="g-akhlak" viewBox="0 0 300 150"><use href="#star8"/><path d="M150 26V42" stroke="#fff" stroke-width="2.5"/><path d="M136 58H164L156 44H144Z" fill="#fff"/><path d="M138 58H162V92Q162 104 150 108Q138 104 138 92Z" fill="#fff"/><ellipse cx="150" cy="82" rx="7" ry="14" fill="#D9A441"/><path d="M144 108H156L153 116H147Z" fill="#fff"/></symbol>
+<symbol id="g-sirah" viewBox="0 0 300 150"><use href="#star8"/><path d="M118 96C118 72 134 62 150 46C166 62 182 72 182 96Z" fill="#fff"/><path d="M110 96H190V108H110Z" fill="#fff"/><path d="M96 66L102 52L108 66Z" fill="#fff"/><rect x="97" y="66" width="10" height="42" fill="#fff"/><path d="M192 66L198 52L204 66Z" fill="#fff"/><rect x="193" y="66" width="10" height="42" fill="#fff"/><path d="M150 46V36" stroke="#fff" stroke-width="2.5"/><circle cx="150" cy="32" r="3.5" fill="#D9A441"/><path d="M143 108V94a7 7 0 0 1 14 0V108Z" fill="#D9A441"/></symbol>
+<symbol id="scene-masjid" viewBox="0 0 400 220"><rect width="400" height="220" fill="#0A3A33"/>
+<mask id="mk-scene"><rect x="300" y="10" width="60" height="60" fill="#fff"/><circle cx="340" cy="34" r="16" fill="#000"/></mask><circle cx="330" cy="40" r="19" fill="#D9A441" mask="url(#mk-scene)"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(60 40)" fill="#fff" fill-opacity=".8"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(150 24)" fill="#fff" fill-opacity=".8"/>
+<path d="M0 -6L1.6 -1.6L6 0L1.6 1.6L0 6L-1.6 1.6L-6 0L-1.6 -1.6Z" transform="translate(250 52)" fill="#fff" fill-opacity=".8"/>
+<g fill="#052622"><path d="M87 94L96 62L105 94Z"/><rect x="90" y="94" width="12" height="14"/><rect x="85" y="108" width="22" height="5"/><rect x="88" y="113" width="16" height="107"/>
+<path d="M295 94L304 62L313 94Z"/><rect x="298" y="94" width="12" height="14"/><rect x="293" y="108" width="22" height="5"/><rect x="296" y="113" width="16" height="107"/>
+<rect x="118" y="150" width="164" height="70"/><path d="M150 150C150 95 187 85 200 65C213 85 250 95 250 150Z"/>
+<path d="M118 150C118 126 132 122 140 112C148 122 162 126 162 150Z"/><path d="M238 150C238 126 252 122 260 112C268 122 282 126 282 150Z"/><path d="M200 65V54" stroke="#052622" stroke-width="2.5"/></g>
+<circle cx="200" cy="50" r="4" fill="#D9A441"/><circle cx="96" cy="58" r="3" fill="#D9A441"/><circle cx="304" cy="58" r="3" fill="#D9A441"/>
+<g fill="#D9A441" fill-opacity=".92"><path d="M186 220V188a14 14 0 0 1 28 0V220Z"/><path d="M128 190V176a6 6 0 0 1 12 0V190Z"/><path d="M152 190V176a6 6 0 0 1 12 0V190Z"/><path d="M236 190V176a6 6 0 0 1 12 0V190Z"/><path d="M260 190V176a6 6 0 0 1 12 0V190Z"/></g>
+<rect y="212" width="400" height="8" fill="#031A17"/></symbol>
+</defs></svg>
+
+<header style="background:#fff;border-bottom:1px solid #D8E1DD">
+<div class="hd" style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="index.html" style="display:flex;align-items:center;gap:12px">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E4F45"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2" transform="rotate(45 20 20)"/></svg>
+<span style="font-weight:800;font-size:19px;letter-spacing:-.01em">Cahaya Dakwah</span>
+</a>
+<nav class="nv" aria-label="Navigasi utama" style="display:flex;flex-wrap:wrap;gap:6px">
+<a href="index.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Beranda</a>
+<a href="kajian.html" style="padding:12px 18px;border-radius:999px;font-weight:700;font-size:15px;background:#E4EFEA;color:#0E4F45">Kajian</a>
+<a href="artikel.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Artikel</a>
+<a href="donasi.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Donasi</a>
+</nav>
+<a class="hd-cta" href="donasi.html" style="padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;background:#0E4F45;color:#fff">Berdonasi</a>
+</div>
+</header>
+
+<main style="max-width:1200px;margin:0 auto;padding:28px 24px 88px">
+<nav aria-label="Jejak halaman" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px;font-size:15px;color:#4B5F59">
+<a href="kajian.html" style="padding:10px 0;font-weight:600;color:#0E4F45">Kajian</a>
+<span aria-hidden="true">/</span>
+<span>Akhlak</span>
+</nav>
+
+<div style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start">
+
+<div style="flex:999 1 600px;min-width:0">
+<div style="position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#0A3A33;display:flex;align-items:center;justify-content:center">
+<svg aria-hidden="true" viewBox="0 0 400 220" preserveAspectRatio="xMidYMax slice" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#scene-masjid" width="400" height="220"/></svg>
+<sc-if value="{{playing}}" hint-placeholder-val="{{false}}">
+<span style="position:absolute;left:18px;top:18px;padding:6px 14px;border-radius:999px;background:{{accent}};color:#10231F;font-size:13px;font-weight:700">Sedang diputar · {{speedLabel}}</span>
+</sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{true}}">
+<button aria-label="Putar video" onClick="{{togglePlay}}" style="position:relative;width:84px;height:84px;border-radius:999px;border:none;background:#fff;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="#0E4F45"/></svg></button>
+</sc-if>
+</div>
+
+<div style="margin-top:14px;background:#fff;border:1px solid #D8E1DD;border-radius:16px;padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:14px">
+<button aria-label="{{playLabel}}" onClick="{{togglePlay}}" style="width:48px;height:48px;border-radius:999px;border:none;background:#0E4F45;display:flex;align-items:center;justify-content:center">
+<sc-if value="{{playing}}" hint-placeholder-val="{{false}}"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="#fff"/></svg></sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{true}}"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="#fff"/></svg></sc-if>
+</button>
+<button onClick="{{back}}" style="min-height:44px;padding:0 14px;border-radius:12px;border:1.5px solid #C5D2CC;background:#fff;font-size:14px;font-weight:700;color:#10231F">−10 dtk</button>
+<button onClick="{{fwd}}" style="min-height:44px;padding:0 14px;border-radius:12px;border:1.5px solid #C5D2CC;background:#fff;font-size:14px;font-weight:700;color:#10231F">+10 dtk</button>
+<div style="flex:1 1 160px;min-width:0">
+<div role="progressbar" aria-label="Posisi pemutaran" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{pos}}" style="height:8px;border-radius:999px;background:#DDE7E2;overflow:hidden"><div style="{{barStyle}}"></div></div>
+</div>
+<p style="margin:0;font-size:14px;font-weight:600;color:#4B5F59;min-width:84px;text-align:right">{{posLabel}}</p>
+<div style="display:flex;gap:6px">
+<sc-for list="{{speeds}}" as="sp" hint-placeholder-count="3">
+<button aria-pressed="{{sp.on}}" onClick="{{sp.pick}}" style="{{sp.style}}">{{sp.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<h1 class="h1" style="margin:28px 0 12px;font-size:36px;line-height:1.15;letter-spacing:-.02em;font-weight:800">Adab Menuntut Ilmu</h1>
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:24px">
+<span style="padding:4px 12px;border-radius:999px;background:#E4EFEA;color:#0E4F45;font-size:13px;font-weight:700">Akhlak</span>
+<span style="padding:4px 12px;border-radius:999px;border:1px solid #C5D2CC;color:#3D524C;font-size:13px;font-weight:600">Video</span>
+<span style="font-size:14px;color:#4B5F59">Ditayangkan [tanggal]</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-top:1px solid #D8E1DD;border-bottom:1px solid #D8E1DD">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="width:52px;height:52px;border-radius:999px;background:#0E4F45;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px" aria-hidden="true">UN</div>
+<div>
+<p style="margin:0;font-weight:800;font-size:17px">Ustadz [Nama]</p>
+<p style="margin:2px 0 0;font-size:14px;color:#4B5F59">[Lembaga atau majelis]</p>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+<button aria-pressed="{{follow}}" onClick="{{toggleFollow}}" style="{{followStyle}}">{{followLabel}}</button>
+<button aria-pressed="{{saved}}" onClick="{{toggleSaved}}" style="{{savedStyle}}">{{savedLabel}}</button>
+<button onClick="{{share}}" style="min-height:46px;padding:0 20px;border-radius:12px;font-size:15px;font-weight:700;background:#fff;color:#10231F;border:1.5px solid #C5D2CC">{{shareLabel}}</button>
+</div>
+</div>
+
+<div role="tablist" aria-label="Isi kajian" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;border-bottom:1px solid #D8E1DD">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button role="tab" aria-selected="{{t.on}}" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}}</button>
+</sc-for>
+</div>
+
+<div style="padding-top:24px">
+<sc-if value="{{showRingkasan}}" hint-placeholder-val="{{true}}">
+<p style="margin:0 0 16px;font-size:17px;line-height:1.75;color:#2B3F39;max-width:680px">Kajian ini mengajak kita menata hati sebelum menata buku. Pembahasan berkisar pada niat yang lurus, penghormatan kepada guru, kesabaran dalam proses, dan kesediaan mengamalkan apa yang sudah dipelajari.</p>
+<p style="margin:0;font-size:14px;color:#4B5F59">Ringkasan contoh, ganti dengan ringkasan kajian yang sebenarnya.</p>
+</sc-if>
+<sc-if value="{{showPoin}}" hint-placeholder-val="{{false}}">
+<ol style="margin:0;padding:0 0 0 24px;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.6;max-width:680px">
+<li>Luruskan niat sebelum mulai belajar.</li>
+<li>Hormati guru dan suasana majelis ilmu.</li>
+<li>Sabar menjalani proses, jangan tergesa-gesa.</li>
+<li>Amalkan ilmu sedikit demi sedikit, mulai dari yang paling dekat.</li>
+</ol>
+</sc-if>
+<sc-if value="{{showCatatan}}" hint-placeholder-val="{{false}}">
+<div style="max-width:680px">
+<label for="catatan" style="display:block;margin-bottom:8px;font-size:15px;font-weight:700">Catatanku untuk kajian ini</label>
+<textarea id="catatan" rows="4" placeholder="Tulis hal yang ingin kamu ingat" value="{{draft}}" onChange="{{onDraft}}" style="box-sizing:border-box;width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid #B7C8C1;background:#fff;font-size:16px;line-height:1.5;color:#10231F;resize:vertical"></textarea>
+<button onClick="{{addNote}}" style="margin-top:12px;min-height:48px;padding:0 24px;border-radius:12px;border:none;background:#0E4F45;color:#fff;font-size:15px;font-weight:700">Simpan catatan</button>
+<sc-if value="{{noNotes}}" hint-placeholder-val="{{true}}">
+<p style="margin:20px 0 0;color:#4B5F59;font-size:15px">Belum ada catatan.</p>
+</sc-if>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{notes}}" as="n" hint-placeholder-count="0">
+<div style="display:flex;gap:14px;align-items:flex-start;justify-content:space-between;background:#fff;border:1px solid #D8E1DD;border-radius:14px;padding:16px 18px">
+<p style="margin:0;font-size:16px;line-height:1.55;white-space:pre-wrap">{{n.text}}</p>
+<button onClick="{{n.remove}}" style="flex:none;min-height:40px;padding:0 14px;border-radius:10px;border:1.5px solid #C5D2CC;background:#fff;font-size:14px;font-weight:700;color:#10231F">Hapus</button>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<aside aria-label="Kajian berikutnya" style="flex:1 1 300px;max-width:400px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<div style="background:#fff;border:1px solid #D8E1DD;border-radius:20px;padding:24px">
+<h2 style="margin:0 0 16px;font-size:20px;font-weight:800">Kajian berikutnya</h2>
+<div style="display:flex;flex-direction:column;gap:6px">
+<a href="putar.html" style="display:flex;gap:14px;align-items:center;padding:10px;border-radius:14px">
+<div style="position:relative;overflow:hidden;flex:none;width:72px;height:72px;border-radius:12px;background:#8A5A14"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#g-akhlak" width="300" height="150"/></svg></div>
+<div style="min-width:0"><p style="margin:0 0 4px;font-weight:700;line-height:1.35">Menjaga Lisan di Media Sosial</p><p style="margin:0;font-size:14px;color:#4B5F59">Audio · Ustadz [Nama]</p></div>
+</a>
+<a href="putar.html" style="display:flex;gap:14px;align-items:center;padding:10px;border-radius:14px">
+<div style="position:relative;overflow:hidden;flex:none;width:72px;height:72px;border-radius:12px;background:#8A5A14"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#g-akhlak" width="300" height="150"/></svg></div>
+<div style="min-width:0"><p style="margin:0 0 4px;font-weight:700;line-height:1.35">Berbakti kepada Orang Tua</p><p style="margin:0;font-size:14px;color:#4B5F59">Video · Ustadz [Nama]</p></div>
+</a>
+<a href="putar.html" style="display:flex;gap:14px;align-items:center;padding:10px;border-radius:14px">
+<div style="position:relative;overflow:hidden;flex:none;width:72px;height:72px;border-radius:12px;background:#0E4F45"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#g-akidah" width="300" height="150"/></svg></div>
+<div style="min-width:0"><p style="margin:0 0 4px;font-weight:700;line-height:1.35">Mengenal Rukun Iman</p><p style="margin:0;font-size:14px;color:#4B5F59">Video · Ustadz [Nama]</p></div>
+</a>
+<a href="putar.html" style="display:flex;gap:14px;align-items:center;padding:10px;border-radius:14px">
+<div style="position:relative;overflow:hidden;flex:none;width:72px;height:72px;border-radius:12px;background:#8C3A3A"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="#g-sirah" width="300" height="150"/></svg></div>
+<div style="min-width:0"><p style="margin:0 0 4px;font-weight:700;line-height:1.35">Hijrah dan Pelajarannya</p><p style="margin:0;font-size:14px;color:#4B5F59">Audio · Ustadz [Nama]</p></div>
+</a>
+</div>
+</div>
+<div style="background:#0E4F45;border-radius:20px;padding:28px">
+<h2 style="margin:0 0 10px;font-size:20px;line-height:1.3;font-weight:800;color:#fff">Kajian ini gratis untuk semua</h2>
+<p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#CFE3DC">Bantu kami terus menghadirkan kajian yang mudah diakses.</p>
+<a href="donasi.html" style="display:inline-block;padding:14px 26px;border-radius:12px;font-weight:700;font-size:15px;background:{{accent}};color:#10231F">Berdonasi</a>
+</div>
+</aside>
+
+</div>
+</main>
+
+<footer style="position:relative;background:#0A3A33;color:#CFE3DC">
+<svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="xMidYMax slice" style="position:absolute;left:0;top:-59px;width:100%;height:60px"><g fill="#0A3A33"><rect x="0" y="54" width="1440" height="6"/>
+<rect x="140" y="40" width="80" height="20"/><path d="M164 40C164 28 174 26 180 16C186 26 196 28 196 40Z"/><path d="M135 22L140 6L145 22Z"/><rect x="136" y="22" width="8" height="38"/><path d="M215 22L220 6L225 22Z"/><rect x="216" y="22" width="8" height="38"/>
+<rect x="640" y="36" width="160" height="24"/><path d="M690 36C690 22 706 18 720 4C734 18 750 22 750 36Z"/><path d="M634 18L640 0L646 18Z"/><rect x="636" y="18" width="8" height="42"/><path d="M794 18L800 0L806 18Z"/><rect x="796" y="18" width="8" height="42"/>
+<rect x="1220" y="40" width="80" height="20"/><path d="M1244 40C1244 28 1254 26 1260 16C1266 26 1276 28 1276 40Z"/><path d="M1215 22L1220 6L1225 22Z"/><rect x="1216" y="22" width="8" height="38"/><path d="M1295 22L1300 6L1305 22Z"/><rect x="1296" y="22" width="8" height="38"/>
+<rect x="380" y="48" width="80" height="12"/><path d="M408 48C408 40 414 38 420 30C426 38 432 40 432 48Z"/><rect x="980" y="48" width="80" height="12"/><path d="M1008 48C1008 40 1014 38 1020 30C1026 38 1032 40 1032 48Z"/></g></svg>
+<div style="max-width:1200px;margin:0 auto;padding:56px 24px 28px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+<div style="flex:1 1 280px;max-width:360px">
+<p style="margin:0 0 12px;font-weight:800;font-size:20px;color:#fff">Cahaya Dakwah</p>
+<p style="margin:0;line-height:1.65;font-size:15px">Menyampaikan kebaikan dengan cara yang ramah, jelas, dan mudah dijangkau.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:56px">
+<nav aria-label="Jelajahi" style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Jelajahi</p>
+<a href="kajian.html" style="padding:6px 0">Kajian</a>
+<a href="artikel.html" style="padding:6px 0">Artikel</a>
+<a href="donasi.html" style="padding:6px 0">Donasi</a>
+</nav>
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Hubungi kami</p>
+<p style="margin:0;padding:6px 0">[Email kontak]</p>
+<p style="margin:0;padding:6px 0">[Nomor WhatsApp]</p>
+</div>
+</div>
+</div>
+<div style="max-width:1200px;margin:0 auto;padding:20px 24px 32px;border-top:1px solid #1F5A50;font-size:14px">© 2026 Cahaya Dakwah. Seluruh hak cipta dilindungi.</div>
+</footer>
+
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D9A441","options":["#D9A441","#E8B84F","#C98A2B"]},"$preview":{"width":1280,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const playing = s.playing ?? false;
+    const pos = s.pos ?? 0;
+    const speed = s.speed ?? 1;
+    const follow = s.follow ?? false;
+    const saved = s.saved ?? false;
+    const copied = s.copied ?? false;
+    const tab = s.tab ?? 'ringkasan';
+    const draft = s.draft ?? '';
+    const notes = s.notes ?? [];
+
+    const speedBase = 'min-height:44px;min-width:56px;padding:0 12px;border-radius:12px;font-size:14px;font-weight:700;';
+    const speeds = [1, 1.25, 1.5].map((v) => ({
+      label: v + '×',
+      on: v === speed,
+      pick: () => this.setState({ speed: v }),
+      style: v === speed
+        ? speedBase + 'background:#E4EFEA;color:#0E4F45;border:1.5px solid #0E4F45'
+        : speedBase + 'background:#fff;color:#10231F;border:1.5px solid #C5D2CC'
+    }));
+
+    const tabBase = 'min-height:48px;padding:0 20px;margin-bottom:-1px;background:transparent;border:none;font-size:16px;font-weight:700;';
+    const TABS = [['ringkasan', 'Ringkasan'], ['poin', 'Poin penting'], ['catatan', 'Catatanku']];
+    const tabs = TABS.map(([id, label]) => ({
+      label,
+      on: id === tab,
+      pick: () => this.setState({ tab: id }),
+      style: id === tab
+        ? tabBase + 'color:#0E4F45;border-bottom:3px solid #0E4F45'
+        : tabBase + 'color:#4B5F59;border-bottom:3px solid transparent'
+    }));
+
+    const pill = 'min-height:46px;padding:0 20px;border-radius:12px;font-size:15px;font-weight:700;';
+    const on = 'background:#E4EFEA;color:#0E4F45;border:1.5px solid #0E4F45';
+    const off = 'background:#fff;color:#10231F;border:1.5px solid #C5D2CC';
+
+    return {
+      accent: this.props.accent ?? '#D9A441',
+      playing,
+      paused: !playing,
+      playLabel: playing ? 'Jeda' : 'Putar',
+      togglePlay: () => this.setState({ playing: !playing }),
+      back: () => this.setState({ pos: Math.max(0, pos - 5) }),
+      fwd: () => this.setState({ pos: Math.min(100, pos + 5) }),
+      pos,
+      posLabel: 'Posisi ' + pos + '%',
+      barStyle: 'height:100%;border-radius:999px;background:#0E4F45;width:' + pos + '%',
+      speeds,
+      speedLabel: speed + '×',
+      follow,
+      toggleFollow: () => this.setState({ follow: !follow }),
+      followLabel: follow ? 'Diikuti' : 'Ikuti',
+      followStyle: pill + (follow ? on : 'background:#0E4F45;color:#fff;border:1.5px solid #0E4F45'),
+      saved,
+      toggleSaved: () => this.setState({ saved: !saved }),
+      savedLabel: saved ? 'Tersimpan' : 'Simpan',
+      savedStyle: pill + (saved ? on : off),
+      share: () => this.setState({ copied: !copied }),
+      shareLabel: copied ? 'Tautan disalin' : 'Bagikan',
+      tabs,
+      showRingkasan: tab === 'ringkasan',
+      showPoin: tab === 'poin',
+      showCatatan: tab === 'catatan',
+      draft,
+      onDraft: (e) => this.setState({ draft: e.target.value }),
+      addNote: () => {
+        const text = draft.trim();
+        if (text === '') return;
+        this.setState({ notes: [{ id: Date.now(), text }].concat(notes), draft: '' });
+      },
+      noNotes: notes.length === 0,
+      notes: notes.map((n) => ({
+        text: n.text,
+        remove: () => this.setState({ notes: notes.filter((x) => x.id !== n.id) })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

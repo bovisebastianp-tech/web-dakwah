@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Artikel Cahaya Dakwah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/dc-lite.js"></script>
+</head>
+<body>
+<template id="x-dc">
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#10231F;background:#F6F7F4}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.88}
+button{font-family:inherit;cursor:pointer}
+button:hover{opacity:.9}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #D9A441;outline-offset:2px}
+@media (max-width:1180px){.deco{display:none}}
+@media (max-width:640px){
+.hd{padding:10px 16px !important;gap:8px !important}
+.nv{order:3;width:100%;flex-wrap:nowrap !important;overflow-x:auto;gap:4px !important}
+.nv a{padding:10px 14px !important;white-space:nowrap}
+.hd-cta{padding:10px 18px !important}
+.h1{font-size:34px !important;line-height:1.12 !important}
+.h2{font-size:27px !important}
+.band-in{padding:40px 20px 36px !important}
+.fp{padding:24px !important}
+.nl{padding:48px 20px !important}
+}
+</style>
+</helmet>
+<div style="min-height:100%;background:#F6F7F4">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<g id="star8" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"><rect x="105" y="30" width="90" height="90"/><rect x="105" y="30" width="90" height="90" transform="rotate(45 150 75)"/></g>
+<symbol id="g-akidah" viewBox="0 0 300 150"><use href="#star8"/><mask id="mk-ak"><rect width="300" height="150" fill="#fff"/><circle cx="164" cy="66" r="25" fill="#000"/></mask><circle cx="146" cy="75" r="34" fill="#fff" mask="url(#mk-ak)"/><path d="M0 -8L2 -2L8 0L2 2L0 8L-2 2L-8 0L-2 -2Z" transform="translate(178 62) scale(1.3)" fill="#D9A441"/></symbol>
+<symbol id="g-fikih" viewBox="0 0 300 150"><use href="#star8"/><path d="M150 52C136 44 118 44 104 48V100C118 96 136 96 150 104Z" fill="#fff"/><path d="M150 52C164 44 182 44 196 48V100C182 96 164 96 150 104Z" fill="#fff"/><path d="M150 52V104" stroke="#D9A441" stroke-width="2.5"/></symbol>
+<symbol id="g-akhlak" viewBox="0 0 300 150"><use href="#star8"/><path d="M150 26V42" stroke="#fff" stroke-width="2.5"/><path d="M136 58H164L156 44H144Z" fill="#fff"/><path d="M138 58H162V92Q162 104 150 108Q138 104 138 92Z" fill="#fff"/><ellipse cx="150" cy="82" rx="7" ry="14" fill="#D9A441"/><path d="M144 108H156L153 116H147Z" fill="#fff"/></symbol>
+<symbol id="g-tafsir" viewBox="0 0 300 150"><use href="#star8"/><rect x="112" y="40" width="76" height="44" rx="4" fill="#fff"/><path d="M150 40V84" stroke="#D9A441" stroke-width="2.5"/><path d="M126 88L174 118M174 88L126 118" stroke="#fff" stroke-width="5" stroke-linecap="round"/></symbol>
+<symbol id="g-keluarga" viewBox="0 0 300 150"><use href="#star8"/><path d="M102 78L150 40L198 78Z" fill="#fff"/><rect x="114" y="76" width="72" height="34" fill="#fff"/><path d="M141 110V96a9 9 0 0 1 18 0V110Z" fill="#D9A441"/><rect x="122" y="86" width="12" height="12" rx="2" fill="#D9A441"/><rect x="166" y="86" width="12" height="12" rx="2" fill="#D9A441"/></symbol>
+</defs></svg>
+
+<header style="background:#fff;border-bottom:1px solid #D8E1DD">
+<div class="hd" style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="index.html" style="display:flex;align-items:center;gap:12px">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0E4F45"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2"/><rect x="11" y="11" width="18" height="18" fill="none" stroke="#D9A441" stroke-width="2" transform="rotate(45 20 20)"/></svg>
+<span style="font-weight:800;font-size:19px;letter-spacing:-.01em">Cahaya Dakwah</span>
+</a>
+<nav class="nv" aria-label="Navigasi utama" style="display:flex;flex-wrap:wrap;gap:6px">
+<a href="index.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Beranda</a>
+<a href="kajian.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Kajian</a>
+<a href="artikel.html" style="padding:12px 18px;border-radius:999px;font-weight:700;font-size:15px;background:#E4EFEA;color:#0E4F45">Artikel</a>
+<a href="donasi.html" style="padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px">Donasi</a>
+</nav>
+<a class="hd-cta" href="donasi.html" style="padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;background:#0E4F45;color:#fff">Berdonasi</a>
+</div>
+</header>
+
+<section style="position:relative;overflow:hidden;background:#E4EFEA">
+<svg class="deco" aria-hidden="true" viewBox="0 0 560 200" style="position:absolute;right:0;bottom:0;width:560px;height:200px"><g fill="#C5DCD2">
+<rect x="150" y="140" width="260" height="60"/><path d="M218 140C218 85 262 75 280 40C298 75 342 85 342 140Z"/><path d="M280 40V28" stroke="#C5DCD2" stroke-width="3"/><circle cx="280" cy="24" r="4"/>
+<path d="M164 140C164 118 180 112 190 98C200 112 216 118 216 140Z"/><path d="M344 140C344 118 360 112 370 98C380 112 396 118 396 140Z"/>
+<path d="M108 82L120 44L132 82Z"/><rect x="112" y="82" width="16" height="16"/><rect x="106" y="98" width="28" height="6"/><rect x="110" y="104" width="20" height="96"/>
+<path d="M428 82L440 44L452 82Z"/><rect x="432" y="82" width="16" height="16"/><rect x="426" y="98" width="28" height="6"/><rect x="430" y="104" width="20" height="96"/>
+<rect x="0" y="170" width="100" height="30"/><path d="M30 170C30 156 42 154 50 142C58 154 70 156 70 170Z"/><rect x="460" y="170" width="100" height="30"/><path d="M480 170C480 156 492 154 500 142C508 154 520 156 520 170Z"/></g>
+<g fill="#E4EFEA"><path d="M268 200V176a12 12 0 0 1 24 0V200Z"/><path d="M176 184V172a5 5 0 0 1 10 0V184Z"/><path d="M200 184V172a5 5 0 0 1 10 0V184Z"/><path d="M360 184V172a5 5 0 0 1 10 0V184Z"/><path d="M384 184V172a5 5 0 0 1 10 0V184Z"/></g></svg>
+<div class="band-in" style="position:relative;max-width:1200px;margin:0 auto;padding:64px 24px 56px">
+<p style="margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:.12em;color:#0E4F45">ARTIKEL</p>
+<h1 class="h1" style="margin:0 0 16px;font-size:48px;line-height:1.1;letter-spacing:-.02em;font-weight:800;max-width:720px">Bacaan ringan untuk hati dan keseharian</h1>
+<p style="margin:0;max-width:560px;font-size:18px;line-height:1.6;color:#3D524C">Tulisan singkat yang bisa dibaca di sela-sela aktivitas, dari akhlak sampai keluarga.</p>
+</div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:36px 24px 0">
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="6">
+<button aria-pressed="{{t.on}}" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}}</button>
+</sc-for>
+</div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:32px 24px 72px">
+<sc-for list="{{featured}}" as="f" hint-placeholder-count="1">
+<article style="display:flex;flex-wrap:wrap;background:#fff;border:1px solid #D8E1DD;border-radius:24px;overflow:hidden;margin-bottom:24px">
+<div style="{{f.tileStyle}}">
+<svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="{{f.glyph}}" width="300" height="150"/></svg>
+</div>
+<div class="fp" style="flex:1 1 360px;min-width:0;padding:40px">
+<span style="padding:4px 12px;border-radius:999px;background:#E4EFEA;color:#0E4F45;font-size:13px;font-weight:700">{{f.cat}}</span>
+<h2 class="h2" style="margin:16px 0 12px;font-size:32px;line-height:1.2;letter-spacing:-.01em;font-weight:800">{{f.title}}</h2>
+<p style="margin:0 0 20px;font-size:17px;line-height:1.65;color:#3D524C">{{f.excerpt}}</p>
+<p style="margin:0 0 22px;font-size:14px;color:#4B5F59">Oleh [Nama Penulis]</p>
+<button aria-pressed="{{f.saved}}" onClick="{{f.toggle}}" style="{{f.saveStyle}}">{{f.saveLabel}}</button>
+</div>
+</article>
+</sc-for>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(420px,100%),1fr));gap:24px">
+<sc-for list="{{rest}}" as="a" hint-placeholder-count="4">
+<article style="min-width:0;background:#fff;border:1px solid #D8E1DD;border-radius:20px;overflow:hidden">
+<div style="{{a.tileStyle}}"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:100%"><use href="{{a.glyph}}" width="300" height="150"/></svg></div>
+<div style="padding:22px 26px 26px">
+<span style="font-size:13px;font-weight:700;color:#0E4F45;letter-spacing:.04em">{{a.catUpper}}</span>
+<h3 style="margin:8px 0 10px;font-size:21px;line-height:1.3;font-weight:800">{{a.title}}</h3>
+<p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#4B5F59">{{a.excerpt}}</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+<span style="font-size:14px;color:#4B5F59">Oleh [Nama Penulis]</span>
+<button aria-pressed="{{a.saved}}" onClick="{{a.toggle}}" style="{{a.saveStyle}}">{{a.saveLabel}}</button>
+</div>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section style="background:#0E4F45">
+<div class="nl" style="max-width:1200px;margin:0 auto;padding:72px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px">
+<div style="flex:1 1 360px;min-width:0">
+<h2 class="h2" style="margin:0 0 12px;font-size:34px;line-height:1.2;letter-spacing:-.02em;font-weight:800;color:#fff">Artikel baru, langsung ke emailmu</h2>
+<p style="margin:0;max-width:480px;font-size:17px;line-height:1.6;color:#CFE3DC">Satu tulisan ringan setiap pekan. Berhenti berlangganan kapan saja.</p>
+</div>
+<div style="flex:1 1 380px;min-width:0;max-width:520px">
+<label for="surel" style="display:block;margin-bottom:8px;font-size:15px;font-weight:700;color:#fff">Alamat email</label>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<input id="surel" type="email" placeholder="nama@email.com" value="{{email}}" onChange="{{onEmail}}" style="box-sizing:border-box;flex:1 1 240px;min-width:0;height:54px;padding:0 18px;border-radius:14px;border:none;background:#fff;font-family:inherit;font-size:16px;color:#10231F">
+<button onClick="{{subscribe}}" style="min-height:54px;padding:0 26px;border-radius:14px;border:none;background:{{accent}};color:#10231F;font-size:16px;font-weight:800">Berlangganan</button>
+</div>
+<p aria-live="polite" style="margin:12px 0 0;min-height:24px;font-size:15px;color:#fff">{{message}}</p>
+</div>
+</div>
+</section>
+
+<footer style="position:relative;background:#0A3A33;color:#CFE3DC">
+<svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="xMidYMax slice" style="position:absolute;left:0;top:-59px;width:100%;height:60px"><g fill="#0A3A33"><rect x="0" y="54" width="1440" height="6"/>
+<rect x="140" y="40" width="80" height="20"/><path d="M164 40C164 28 174 26 180 16C186 26 196 28 196 40Z"/><path d="M135 22L140 6L145 22Z"/><rect x="136" y="22" width="8" height="38"/><path d="M215 22L220 6L225 22Z"/><rect x="216" y="22" width="8" height="38"/>
+<rect x="640" y="36" width="160" height="24"/><path d="M690 36C690 22 706 18 720 4C734 18 750 22 750 36Z"/><path d="M634 18L640 0L646 18Z"/><rect x="636" y="18" width="8" height="42"/><path d="M794 18L800 0L806 18Z"/><rect x="796" y="18" width="8" height="42"/>
+<rect x="1220" y="40" width="80" height="20"/><path d="M1244 40C1244 28 1254 26 1260 16C1266 26 1276 28 1276 40Z"/><path d="M1215 22L1220 6L1225 22Z"/><rect x="1216" y="22" width="8" height="38"/><path d="M1295 22L1300 6L1305 22Z"/><rect x="1296" y="22" width="8" height="38"/>
+<rect x="380" y="48" width="80" height="12"/><path d="M408 48C408 40 414 38 420 30C426 38 432 40 432 48Z"/><rect x="980" y="48" width="80" height="12"/><path d="M1008 48C1008 40 1014 38 1020 30C1026 38 1032 40 1032 48Z"/></g></svg>
+<div style="max-width:1200px;margin:0 auto;padding:56px 24px 28px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+<div style="flex:1 1 280px;max-width:360px">
+<p style="margin:0 0 12px;font-weight:800;font-size:20px;color:#fff">Cahaya Dakwah</p>
+<p style="margin:0;line-height:1.65;font-size:15px">Menyampaikan kebaikan dengan cara yang ramah, jelas, dan mudah dijangkau.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:56px">
+<nav aria-label="Jelajahi" style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Jelajahi</p>
+<a href="kajian.html" style="padding:6px 0">Kajian</a>
+<a href="artikel.html" style="padding:6px 0">Artikel</a>
+<a href="donasi.html" style="padding:6px 0">Donasi</a>
+</nav>
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="margin:0 0 8px;font-weight:700;color:#fff">Hubungi kami</p>
+<p style="margin:0;padding:6px 0">[Email kontak]</p>
+<p style="margin:0;padding:6px 0">[Nomor WhatsApp]</p>
+</div>
+</div>
+</div>
+<div style="max-width:1200px;margin:0 auto;padding:20px 24px 32px;border-top:1px solid #1F5A50;font-size:14px">© 2026 Cahaya Dakwah. Seluruh hak cipta dilindungi.</div>
+</footer>
+
+</div>
+</template>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D9A441","options":["#D9A441","#E8B84F","#C98A2B"]},"$preview":{"width":1280,"height":2700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const cat = s.cat ?? 'Semua';
+    const saved = s.saved ?? {};
+    const email = s.email ?? '';
+    const message = s.message ?? '';
+    const COLORS = { Akhlak: '#1E5A82', Renungan: '#8A5A14', Ibadah: '#0E4F45', Keluarga: '#9A3F66', Wawasan: '#54407F' };
+    const GLYPHS = { Akhlak: '#g-akhlak', Renungan: '#g-akidah', Ibadah: '#g-tafsir', Keluarga: '#g-keluarga', Wawasan: '#g-fikih' };
+    const ARTICLES = [
+      { id: 1, cat: 'Akhlak', title: 'Lima Adab Bermedia Sosial bagi Seorang Muslim', excerpt: 'Sebelum menekan tombol bagikan, ada beberapa hal yang layak kita timbang.' },
+      { id: 2, cat: 'Renungan', title: 'Menata Niat Sebelum Memulai Hari', excerpt: 'Hari yang sama terasa berbeda ketika kita tahu untuk apa kita melangkah.' },
+      { id: 3, cat: 'Ibadah', title: 'Cara Mudah Membiasakan Membaca Al-Qur’an Setiap Hari', excerpt: 'Mulai dari porsi kecil yang konsisten, lalu tambah pelan-pelan.' },
+      { id: 4, cat: 'Keluarga', title: 'Mengajarkan Shalat kepada Anak dengan Cara yang Menyenangkan', excerpt: 'Anak belajar dari contoh dan suasana di rumah, bukan dari tekanan.' },
+      { id: 5, cat: 'Renungan', title: 'Sabar dan Syukur: Dua Sayap Seorang Mukmin', excerpt: 'Dua sikap yang tampak berbeda, tetapi saling menopang dalam keseharian.' },
+      { id: 6, cat: 'Wawasan', title: 'Membedakan Kabar Benar dan Hoaks Sebelum Membagikan', excerpt: 'Tabayyun adalah kebiasaan yang bisa dilatih, dimulai dari jeda sejenak.' }
+    ];
+    const list = ARTICLES.filter((a) => cat === 'Semua' || a.cat === cat);
+
+    const chipBase = 'min-height:46px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:700;';
+    const tabs = ['Semua', 'Akhlak', 'Renungan', 'Ibadah', 'Keluarga', 'Wawasan'].map((label) => ({
+      label,
+      on: label === cat,
+      pick: () => this.setState({ cat: label }),
+      style: label === cat
+        ? chipBase + 'background:#0E4F45;color:#fff;border:1.5px solid #0E4F45'
+        : chipBase + 'background:#fff;color:#10231F;border:1.5px solid #C5D2CC'
+    }));
+
+    const saveBase = 'min-height:44px;padding:0 18px;border-radius:12px;font-size:14px;font-weight:700;';
+    const decorate = (a, tileStyle) => {
+      const isSaved = !!saved[a.id];
+      return {
+        title: a.title,
+        excerpt: a.excerpt,
+        cat: a.cat,
+        catUpper: a.cat.toUpperCase(),
+        glyph: GLYPHS[a.cat],
+        tileStyle,
+        saved: isSaved,
+        saveLabel: isSaved ? 'Tersimpan' : 'Simpan bacaan',
+        saveStyle: saveBase + (isSaved
+          ? 'background:#E4EFEA;color:#0E4F45;border:1.5px solid #0E4F45'
+          : 'background:#fff;color:#10231F;border:1.5px solid #C5D2CC'),
+        toggle: () => {
+          const next = Object.assign({}, saved);
+          next[a.id] = !isSaved;
+          this.setState({ saved: next });
+        }
+      };
+    };
+
+    const featured = list.slice(0, 1).map((a) => decorate(a, 'position:relative;overflow:hidden;flex:1 1 320px;min-height:300px;background:' + COLORS[a.cat]));
+    const rest = list.slice(1).map((a) => decorate(a, 'position:relative;overflow:hidden;height:140px;background:' + COLORS[a.cat]));
+
+    return {
+      accent: this.props.accent ?? '#D9A441',
+      tabs,
+      featured,
+      rest,
+      email,
+      onEmail: (e) => this.setState({ email: e.target.value }),
+      subscribe: () => {
+        const ok = email.indexOf('@') > 0 && email.indexOf('.', email.indexOf('@')) > 0;
+        this.setState({ message: ok ? 'Terima kasih, artikel baru akan dikirim ke emailmu.' : 'Masukkan alamat email yang valid.' });
+      },
+      message
+    };
+  }
+}
+</script>
+</body>
+</html>
